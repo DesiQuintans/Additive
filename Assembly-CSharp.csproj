@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{E7BF0751-073D-B598-6B7A-2DE7EE04AE2E}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_5_5;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_WEBPLAYER;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_WEBCAM;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW;ENABLE_SUBSTANCE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Custom GUI\InLevelGUI.cs" />
+     <Compile Include="Assets\Custom GUI\InstructionText.cs" />
+     <Compile Include="Assets\Custom GUI\SetAboutText.cs" />
+     <Compile Include="Assets\Custom GUI\SetThankYouText.cs" />
+     <Compile Include="Assets\Custom GUI\TitleButtons.cs" />
+     <Compile Include="Assets\Scripts\AutoParent.cs" />
+     <Compile Include="Assets\Scripts\CameraMover.cs" />
+     <Compile Include="Assets\Scripts\ColorLerp.cs" />
+     <Compile Include="Assets\Scripts\ControlBlock.cs" />
+     <Compile Include="Assets\Scripts\GameGrid.cs" />
+     <Compile Include="Assets\Scripts\HoverExample.cs" />
+     <Compile Include="Assets\Scripts\ShapeScript.cs" />
+     <Compile Include="Assets\Scripts\Timer.cs" />
+     <Compile Include="Assets\Sounds\EasyFadeIn.cs" />
+     <None Include="Assets\Level Files\7.txt" />
+     <None Include="Assets\Level Files\14.txt" />
+     <None Include="Assets\Level Files\13.txt" />
+     <None Include="Assets\Level Files\3.txt" />
+     <None Include="Assets\Level Files\4.txt" />
+     <None Include="Assets\Level Files\15.txt" />
+     <None Include="Assets\Level Files\6.txt" />
+     <None Include="Assets\Level Files\10.txt" />
+     <None Include="Assets\Level Files\12.txt" />
+     <None Include="Assets\Level Files\8.txt" />
+     <None Include="Assets\Level Files\testLevel.txt" />
+     <None Include="Assets\Level Files\16.txt" />
+     <None Include="Assets\Level Files\9.txt" />
+     <None Include="Assets\Level Files\1.txt" />
+     <None Include="Assets\Level Files\5.txt" />
+     <None Include="Assets\Level Files\2.txt" />
+     <None Include="Assets\Level Files\11.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{38D3B995-3EC8-D3B7-F913-5E1BCEE7D6AC}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
